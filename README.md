@@ -1,5 +1,3 @@
-# Cover Letter Generator using OpenAI
-
 Replace LaTeX Template Placeholders with YAML Config and OpenAI Queries
 
 ## Introduction
@@ -20,6 +18,8 @@ This script reads a YAML configuration file, a LaTeX template file, and a compan
    pip install pyyaml openai
    ```
 
+````
+
 ## Files
 
 1. config.yaml
@@ -31,20 +31,24 @@ This script reads a YAML configuration file, a LaTeX template file, and a compan
 3. company_info.txt
    This text file contains the job description and company info that will be used to replace the {{company_info}} placeholder in the LaTeX template.
 
+4. self_info.txt
+   This text file contains a summary of who you and your resume.
+
 ## Usage
 
 Run the script with the following command:
 
 ```bash
-python replace_placeholders.py --config config.yaml --template template.tex --output output.tex --info company_info.txt
+python cover_letter_generator.py --config ./working/config.yaml --template ./working/cover_letter_base.tex --company_info ./working/company_info.txt --self_info ./working/self_info.txt -o ./working/output.tex
 ```
 
 Arguments:
 
 - `--config` or `-c`: Path to the YAML configuration file.
 - `--template` or `-t`: Path to the LaTeX template file.
+- `--company_info` or `-ci`: Path to the company info text file.
+- `--self_info` or `-si`: Path to the self information text file.
 - `--output` or `-o`: Path to the output LaTeX file.
-- `--info` or `-i`: Path to the company info text file.
 
 ## Example Files
 
@@ -111,13 +115,9 @@ Acme Corporation is a leading firm in the industry, known for its innovative sol
 
 ## Output
 
-The script will generate an output LaTeX file (e.g., output.tex) with all placeholders replaced by the corresponding values from the YAML configuration, OpenAI query results, and company info.
+The script will generate an output LaTeX file (e.g., output.tex) with all placeholders replaced by the corresponding values from the YAML configuration, OpenAI query results, company info, and self info.
 
 ## License
 
 This project is licensed under the MIT License.
-
-```
-
-Save this content as `README.txt` in your project directory. This file provides a comprehensive guide on how to set up, configure, and run the script, along with example files and usage instructions.
-```
+````
