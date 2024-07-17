@@ -18,8 +18,6 @@ This script reads a YAML configuration file, a LaTeX template file, and a compan
    pip install pyyaml openai
    ```
 
-````
-
 ## Files
 
 1. config.yaml
@@ -120,4 +118,7 @@ The script will generate an output LaTeX file (e.g., output.tex) with all placeh
 ## License
 
 This project is licensed under the MIT License.
-````
+
+```
+
+```
