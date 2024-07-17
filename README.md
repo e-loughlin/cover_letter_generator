@@ -113,10 +113,6 @@ Acme Corporation is a leading firm in the industry, known for its innovative sol
 
 The script will generate an output LaTeX file (e.g., output.tex) with all placeholders replaced by the corresponding values from the YAML configuration, OpenAI query results, and company info.
 
-## Contact
-
-For any issues or questions, please contact [your contact information].
-
 ## License
 
 This project is licensed under the MIT License.
