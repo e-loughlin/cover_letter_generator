@@ -1,0 +1,9 @@
+keys:
+  name: John Doe
+  company_name: Acme Corporation
+  company_title: Senior Software Engineer
+  company_address: 1234 Elm Street, Springfield, USA
+
+queries:
+  cover_letter_content: >
+    Write a cover letter for a Senior Software Engineer applying to Acme Corporation.
