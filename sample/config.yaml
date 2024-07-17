@@ -1,9 +1,18 @@
-keys:
-  name: John Doe
-  company_name: Acme Corporation
-  company_title: Senior Software Engineer
-  company_address: 1234 Elm Street, Springfield, USA
+OPENAI_API_KEY: "your API key"
+WRITING_STYLE: "Make it sound professional."
 
+# Key-Value Pairs that will be replaced in the Template
+keys:
+  NAME: Evan Loughlin
+  MY_ADDRESS: 123 Fake Street Calgary AB Canada
+
+# Queries, where the response will be replaced in the Template based on that key
 queries:
-  cover_letter_content: >
-    Write a cover letter for a Senior Software Engineer applying to Acme Corporation.
+  PARAGRAPH_ONE: >
+    Write a paragraph explaining what intrigues me about the company.
+  PARAGRAPH_TWO: >
+    Write a paragraph explaining why I personally would be a good fit, given my personal info.
+  COMPANY_NAME: >
+    What is the company name?
+  COMPANY_JOB_TITLE: >
+    Job title they're hiring for?
